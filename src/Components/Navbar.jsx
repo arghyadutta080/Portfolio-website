@@ -13,7 +13,7 @@ export default function Navbar() {
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-10 " aria-label="Global">
                 <div className="flex lg:flex-1">
                     <a href="#" className=" p-1.5">
-                        <span className="text-lg font-semibold leading-6 text-white">Arghya Dutta</span>
+                        <span className="text-2xl font-semibold leading-6 text-white">Arghya Dutta</span>
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -26,19 +26,19 @@ export default function Navbar() {
                     </button>
                 </div>
                 <Popover.Group className="hidden lg:flex lg:gap-x-12">
-                    <a href="#" className="text-lg font-semibold leading-6 text-white">
+                    <a href="#" className="text-xl font-semibold leading-6 text-white">
                         About
                     </a>
-                    <a href="#" className="text-lg font-semibold leading-6 text-white">
+                    <a href="#" className="text-xl font-semibold leading-6 text-white">
                         Education
                     </a>
-                    <a href="#" className="text-lg font-semibold leading-6 text-white">
+                    <a href="#" className="text-xl font-semibold leading-6 text-white">
                         Experience
                     </a>
-                    <a href="#" className="text-lg font-semibold leading-6 text-white">
+                    <a href="#" className="text-xl font-semibold leading-6 text-white">
                         Projects
                     </a>
-                    <a href="#" className="text-lg font-semibold leading-6 text-white">
+                    <a href="#" className="text-xl font-semibold leading-6 text-white">
                         Contact
                     </a>
                 </Popover.Group>
@@ -49,7 +49,7 @@ export default function Navbar() {
                 >
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
-                            <span className="text-lg font-semibold leading-6 text-white">Arghya Dutta</span>
+                            <span className="text-xl font-semibold leading-6 text-white">Arghya Dutta</span>
                         </a>
                         <button
                             type="button"
