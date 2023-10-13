@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Dialog, Popover } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon, } from '@heroicons/react/24/outline'
+import signature from '../assets/Images/signature_logo.png'
 import '../App.css'
 
 
@@ -10,11 +11,11 @@ export default function Navbar() {
 
     return (
         <header className=" ">
-            {/* <UpperBox /> */}
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-10 z-20 relative" aria-label="Global">
                 <div className="flex lg:flex-1">
                     <a href="#" className=" p-1.5">
-                        <span className="text-3xl font-semibold leading-6 text-white">Arghya Dutta</span>
+                        {/* <span className="text-3xl font-semibold leading-6 text-white">Arghya Dutta</span> */}
+                        <img src={signature} alt="" className=' brightness-200 h-14' />
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -30,9 +31,6 @@ export default function Navbar() {
                     <a href="#about" className="text-2xl font-semibold leading-6 text-white">
                         About
                     </a>
-                    {/* <a href="#" className="text-xl font-semibold leading-6 text-white">
-                        Education
-                    </a> */}
                     <a href="#" className="text-2xl font-semibold leading-6 text-white">
                         Experience
                     </a>
@@ -66,9 +64,6 @@ export default function Navbar() {
                                 <a href="#about" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">
                                     About
                                 </a>
-                                {/* <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">
-                                    Education
-                                </a> */}
                                 <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">
                                     Experience
                                 </a>
