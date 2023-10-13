@@ -1,9 +1,8 @@
 #root {
-  background: rgb(9, 9, 121);
-  background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(0, 1, 36, 1) 0%, rgba(4, 4, 122, 1) 100%);
+  background: #020422;
 }
 
 .bg-page {
-  background: rgb(9, 9, 121);
+  background: #020422;
   background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(0, 1, 36, 1) 0%, rgba(4, 4, 122, 1) 100%);
 }

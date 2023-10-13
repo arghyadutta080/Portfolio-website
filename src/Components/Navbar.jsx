@@ -9,11 +9,12 @@ export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className=" z-10">
-            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-10 " aria-label="Global">
+        <header className=" ">
+            {/* <UpperBox /> */}
+            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-10 z-20 relative" aria-label="Global">
                 <div className="flex lg:flex-1">
                     <a href="#" className=" p-1.5">
-                        <span className="text-2xl font-semibold leading-6 text-white">Arghya Dutta</span>
+                        <span className="text-3xl font-semibold leading-6 text-white">Arghya Dutta</span>
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -26,26 +27,26 @@ export default function Navbar() {
                     </button>
                 </div>
                 <Popover.Group className="hidden lg:flex lg:gap-x-12">
-                    <a href="#" className="text-xl font-semibold leading-6 text-white">
+                    <a href="#about" className="text-2xl font-semibold leading-6 text-white">
                         About
                     </a>
-                    <a href="#" className="text-xl font-semibold leading-6 text-white">
+                    {/* <a href="#" className="text-xl font-semibold leading-6 text-white">
                         Education
-                    </a>
-                    <a href="#" className="text-xl font-semibold leading-6 text-white">
+                    </a> */}
+                    <a href="#" className="text-2xl font-semibold leading-6 text-white">
                         Experience
                     </a>
-                    <a href="#" className="text-xl font-semibold leading-6 text-white">
+                    <a href="#" className="text-2xl font-semibold leading-6 text-white">
                         Projects
                     </a>
-                    <a href="#" className="text-xl font-semibold leading-6 text-white">
+                    <a href="#" className="text-2xl font-semibold leading-6 text-white">
                         Contact
                     </a>
                 </Popover.Group>
             </nav>
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-                <div className="fixed inset-0 " />
-                <Dialog.Panel className="fixed bg-page inset-y-0 right-0 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+                <div className=" inset-0" />
+                <Dialog.Panel className="absolute bg-page inset-y-0 right-0 z-30 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
                 >
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
@@ -62,12 +63,12 @@ export default function Navbar() {
                     <div className="mt-6 flow-root ">
                         <div className="-my-6 divide-y divide-gray-500/10 ">
                             <div className="space-y-2 py-6">
-                                <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">
+                                <a href="#about" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">
                                     About
                                 </a>
-                                <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">
+                                {/* <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">
                                     Education
-                                </a>
+                                </a> */}
                                 <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">
                                     Experience
                                 </a>
