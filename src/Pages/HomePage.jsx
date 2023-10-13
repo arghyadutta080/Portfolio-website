@@ -6,6 +6,7 @@ import TechStacks from '../Components/Home/TechStacks'
 import RightBox from '../Styles/LandingSection/RightBox'
 import About from '../Components/Home/About'
 import LeftCircle from '../Styles/AboutSection/LeftCircle'
+import Experience from '../Components/Home/Experience'
 
 const HomePage = () => {
     return (
@@ -14,6 +15,7 @@ const HomePage = () => {
             <HeroSection />
             <TechStacks/>
             <About />
+            <Experience />
             
             <UpperBox /> 
             <RightBox /> 
