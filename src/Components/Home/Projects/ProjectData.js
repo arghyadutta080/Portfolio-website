@@ -1,0 +1,42 @@
+export const Projects = [
+    {
+        title: "StockXplore",
+        description: "Web-app to predict the stock price of next 30 days of a stock using Machine Learning.",
+        image: "https://user-images.githubusercontent.com/74038190/129473960-2d3c0d5e-1b9e-4e1b-8c5d-9a9a8d7a9c9e.png",
+        tags: ["react", "tailwind", "django", "tensorflow", "postman"],
+        source: "https://github.com/arghyadutta080/stockXplore-clientsite",
+        visit: "",
+    },
+    {
+        title: "Innovision-Website",
+        description: "The website of my college, RCCIIT's departmental technical fest of CSE Department, Innovision.",
+        image: "https://user-images.githubusercontent.com/74038190/129473960-2d3c0d5e-1b9e-4e1b-8c5d-9a9a8d7a9c9e.png",
+        tags: ["react", "tailwind", "css", "firebase"],
+        source: "https://github.com/arghyadutta080/Innovision-developement",
+        visit: "https://innovision-developement.vercel.app",
+    },
+    {
+        title: "Rotaract-RCCIIT-website",
+        description: "The website of my college, RCC Institute of Information Technology's Rotaract Club.",
+        image: "https://user-images.githubusercontent.com/74038190/129473960-2d3c0d5e-1b9e-4e1b-8c5d-9a9a8d7a9c9e.png",
+        tags: ["react", "bootstrap", "aws", "postman"],
+        source: "https://github.com/arghyadutta080/Rotaract-club-of-RCCIIT",
+        visit: "https://rotaract-club-of-rcciit.vercel.app",
+    },
+    {
+        title: "Note-Write",
+        description: "A note-taking web application made with CRUD operation functionality and JWT Authentication for users. ",
+        image: "https://user-images.githubusercontent.com/74038190/129473960-2d3c0d5e-1b9e-4e1b-8c5d-9a9a8d7a9c9e.png",
+        tags: ["react", "tailwind", "mongodb", "nodejs", "express", "postman"],
+        source: "https://github.com/arghyadutta080/TO-DO-MERN-App-Client-Site",
+        visit: "https://to-do-mern-app-client-site.vercel.app",
+    },
+    {
+        title: "Deliveroo-Clone",
+        description: "The frontend of a cross platform Food delivery mobile app. It's UI is inspired from Deliveroo.",
+        image: "https://user-images.githubusercontent.com/74038190/129473960-2d3c0d5e-1b9e-4e1b-8c5d-9a9a8d7a9c9e.png",
+        tags: ["react", "tailwind", "redux", "expo"],
+        source: "https://github.com/arghyadutta080/Food-Delivery-App",
+        visit: "",
+    },
+]

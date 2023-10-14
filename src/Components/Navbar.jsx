@@ -33,7 +33,7 @@ export default function Navbar() {
                     <a href="#experience" className="text-2xl font-semibold leading-6 text-white">
                         Experience
                     </a>
-                    <a href="#" className="text-2xl font-semibold leading-6 text-white">
+                    <a href="#project" className="text-2xl font-semibold leading-6 text-white">
                         Projects
                     </a>
                     <a href="#" className="text-2xl font-semibold leading-6 text-white">
@@ -47,7 +47,7 @@ export default function Navbar() {
                 >
                     <div className="flex items-center justify-between">
                         <a href="#" className=" p-1.5">
-                            <img src={signature} alt="" className=' brightness-200 h-14' />
+                            <img src={signature} alt="" className=' brightness-200 h-10' />
                         </a>
                         <button
                             type="button"
@@ -59,17 +59,17 @@ export default function Navbar() {
                     </div>
                     <div className="mt-6 flow-root ">
                         <div className="-my-6 divide-y divide-gray-500/10 ">
-                            <div className="space-y-2 py-6">
-                                <a href="#about" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">
+                            <div className="space-y-6 pt-8">
+                                <a href="#about" className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white">
                                     About
                                 </a>
-                                <a href="#experience" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">
+                                <a href="#experience" className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white">
                                     Experience
                                 </a>
-                                <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">
+                                <a href="#project" className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white">
                                     Projects
                                 </a>
-                                <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">
+                                <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white">
                                     Contact
                                 </a>
                             </div>

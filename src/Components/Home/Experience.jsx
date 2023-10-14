@@ -2,6 +2,8 @@ import React from 'react'
 import { Chrono } from "react-chrono";
 import rcctechz from '../../assets/Images/rcctechz.png'
 import gdsc from '../../assets/Images/gdsc.png'
+import RightBox from '../../Styles/CareerSection/RightBox';
+import '../../App.css'
 
 const Experience = () => {
 
@@ -35,23 +37,25 @@ const Experience = () => {
     ]
 
     return (
-        <div className=' flex flex-col items-center md:px-32 lg:px-40 border-transparent' id='experience'>
-            <h1 className=' text-white text-4xl lg:text-5xl md:text-4xl font-medium lg:mt-10 lg:py-5 flex flex-row justify-center'>
+        <div className=' flex flex-col items-center md:px-32 lg:px-40 border-transparent z-10 relative lg:mb-20' id='experience'>
+            <h1 className=' text-white text-4xl lg:text-5xl md:text-4xl font-medium mt-14 lg:mt-10 lg:py-5 flex flex-row justify-center'>
                 <p className='mx-auto pb-6'>My Experiences ... </p>
             </h1>
-            <div className=' w-full'>
-                <Chrono mode="VERTICAL_ALTERNATING"
+            <div className=' w-full z-10 relative'>
+                <Chrono mode="VERTICAL_ALTERNATING" borderLessCards={true} allowDynamicUpdate = {true}
                     theme={{
                         primary: '#AE00FF',
                         secondary: 'white',
-                        cardBgColor: '#5351BDE5',
+                        cardBgColor: 'transparent',
+                        // cardBgColor: '#5351BDE5',
+                        // #191B54
                         titleColor: 'white',
                         titleColorActive: 'white',
                     }}>
                     {
                         experiences.map((experience, index) => {
                             return (
-                                <div key={index} className='  w-full h-full flex flex-row justify-between flex-wrap'>
+                                <div key={index} className=' z-10 w-full h-full flex flex-row justify-evenly flex-wrap rounded-xl bg-experience py-4 px-1'>
                                     <div className=' h-16 '>
                                         <img src={experience.media.source.url} alt="" className=' rounded-full h-full w-full pb-4 lg:py-0' />
                                     </div>
@@ -67,6 +71,8 @@ const Experience = () => {
                     }
                 </Chrono>
             </div>
+            {/* <LeftBox /> */}
+            <RightBox />
         </div>
 
     )

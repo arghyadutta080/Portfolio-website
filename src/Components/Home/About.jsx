@@ -39,9 +39,9 @@ const About = () => {
             {/* section-2 */}
             <div className=" mx-auto max-w-9xl pt-5 md:pt-0">
                 <div className="z-10 relative overflow-hidden sm:rounded-0 sm:px-16 md:pt-4 flex flex-col lg:flex-row lg:justify-evenly lg:items-center lg:pt-0 ">
-                    <div className=" mx-auto mt-10 lg:mt-0 max-w-xl text-center lg:mx-0 lg:flex-auto lg:py-5 lg:text-left">
-                        <h2 className="text-xl font-semibold tracking-tight text-white lg:text-3xl md:text-2xl pb-2 lg:pb-3 flex flex-row items-center">
-                            <p>INTERESTS</p><FaLaptopCode className='text-white inline-block pl-3' size={50} />
+                    <div className=" mx-auto mt-7 lg:mt-0 max-w-xl text-center lg:mx-0 lg:flex-auto lg:py-5 lg:text-left">
+                        <h2 className="text-xl font-semibold tracking-tight text-white lg:text-3xl md:text-2xl pb-2 lg:pb-3 flex flex-row items-center justify-center lg:justify-start">
+                            <p>INTERESTS</p><FaLaptopCode className='text-white inline-block pl-3' size={55} />
                         </h2>
                         <p className="mt-3 text-base leading-8 text-white font-medium">
                             With a strong passion for technology and a keen interest in software development, I've been working as a web and app developer since last year, building engaging and interactive websites, web-apps and mobile apps. I specialise in MERN and Django and have used these frameworks to create various applications.

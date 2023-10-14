@@ -6,3 +6,13 @@
   background: #020422;
   background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(0, 1, 36, 1) 0%, rgba(4, 4, 122, 1) 100%);
 }
+
+.bg-experience {
+  background: rgb(21, 0, 126);
+  background: linear-gradient(90deg, rgba(21, 0, 126, 1) 0%, rgba(66, 51, 217, 1) 100%);
+}
+
+.bg-project {
+  background: rgb(49, 0, 126);
+  background: linear-gradient(90deg, rgba(49, 0, 126, 1) 45%, rgba(83, 51, 215, 1) 100%);
+}

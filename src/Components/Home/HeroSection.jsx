@@ -14,7 +14,7 @@ const HeroSection = () => {
         <div className=" z-10 relative">
             <div className="mx-auto max-w-9xl">
                 <div className="relative overflow-hidden sm:rounded-0 sm:px-16 md:pt-4 flex flex-col-reverse lg:flex-row lg:justify-evenly lg:pt-0 ">
-                    <div className=" mx-auto mt-10 lg:mt-0 max-w-xl text-center lg:mx-0 lg:flex-auto lg:py-20 lg:text-left">
+                    <div className=" mx-auto mt-10 lg:mt-0 max-w-xl text-center lg:mx-0 lg:flex-auto lg:py-16 lg:text-left">
                         <h2 className="text-3xl font-semibold tracking-tight text-white lg:text-5xl md:text-5xl pb-2 lg:pb-5">
                             Hello Everyone!!
                         </h2>
