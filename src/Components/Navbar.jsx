@@ -36,7 +36,7 @@ export default function Navbar() {
                     <a href="#project" className="text-2xl font-semibold leading-6 text-white">
                         Projects
                     </a>
-                    <a href="#" className="text-2xl font-semibold leading-6 text-white">
+                    <a href="#contact" className="text-2xl font-semibold leading-6 text-white">
                         Contact
                     </a>
                 </Popover.Group>
@@ -69,7 +69,7 @@ export default function Navbar() {
                                 <a href="#project" className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white">
                                     Projects
                                 </a>
-                                <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white">
+                                <a href="#contact" className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white">
                                     Contact
                                 </a>
                             </div>

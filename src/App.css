@@ -14,5 +14,5 @@
 
 .bg-project {
   background: rgb(49, 0, 126);
-  background: linear-gradient(90deg, rgba(49, 0, 126, 1) 45%, rgba(83, 51, 215, 1) 100%);
+  background: linear-gradient(90deg, rgba(49, 0, 126, 1) 0%, rgba(83, 51, 215, 1) 100%);
 }

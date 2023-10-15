@@ -6,9 +6,9 @@ import { FaLaptopCode } from 'react-icons/fa';
 
 const About = () => {
     return (
-        <div className=" z-10 relative px-4 md:px-0 border-t border-transparent" id='about'>
+        <div className=" z-10 relative px-4 md:px-0 border-t border-transparent md:mt-12" id='about'>
             {/* Section-1 */}
-            <div className=" mx-auto max-w-9xl mt-10 md:mt-20">
+            <div className=" mx-auto max-w-9xl mt-10 md:mt-8">
                 <h1 className=' text-white text-4xl lg:text-5xl md:text-4xl font-medium lg:m-0 lg:pb-4 flex flex-row justify-center'>
                     <p className='mx-auto'>About me ... </p>
                 </h1>

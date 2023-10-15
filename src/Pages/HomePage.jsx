@@ -8,6 +8,7 @@ import About from '../Components/Home/About'
 import LeftCircle from '../Styles/AboutSection/LeftCircle'
 import Experience from '../Components/Home/Experience'
 import Project from '../Components/Home/Projects/Project'
+import Contact from '../Components/Home/Contact'
 
 const HomePage = () => {
     return (
@@ -18,6 +19,7 @@ const HomePage = () => {
             <About />
             <Experience />
             <Project />
+            <Contact />
             
             <UpperBox /> 
             <RightBox /> 

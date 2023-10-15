@@ -26,7 +26,7 @@ const HeroSection = () => {
                             Let us take a walk through to know more about me.
                         </p>
                         <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                            <a href="#" className="text-sm px-6 py-2 font-semibold leading-6 border-2 border-[#4155D9] bg-[#4155D9] text-white rounded-md hover:border-2 hover:border-gray-300 hover:text-[#4155D9] hover:bg-white">
+                            <a href="#contact" className="text-sm px-6 py-2 font-semibold leading-6 border-2 border-[#4155D9] bg-[#4155D9] text-white rounded-md hover:border-2 hover:border-gray-300 hover:text-[#4155D9] hover:bg-white">
                                 Contact me
                             </a>
                             <button className="text-sm font-bold leading-6 text-white border-2 border-[#F4E9FF] px-6 py-2 rounded-md hover:border-gray-400 hover:text-gray-400"
