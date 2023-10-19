@@ -4,7 +4,7 @@ import HeroSection from '../Components/Home/HeroSection'
 import UpperBox from '../Styles/LandingSection/UpperBox'
 import TechStacks from '../Components/Home/TechStacks'
 import RightBox from '../Styles/LandingSection/RightBox'
-import About from '../Components/Home/About'
+import About from '../Components/Home/About/About'
 import Experience from '../Components/Home/Experience'
 import Project from '../Components/Home/Projects/Project'
 import Contact from '../Components/Home/Contact'
@@ -15,15 +15,15 @@ const HomePage = () => {
         <div className=''>
             <Navbar />
             <HeroSection />
-            <TechStacks/>
+            <TechStacks />
             <About />
             <Experience />
             <Project />
             <Contact />
-            
-            <UpperBox /> 
-            <RightBox /> 
-            
+
+            <UpperBox />
+            <RightBox />
+
             <Toaster />
         </div>
     )

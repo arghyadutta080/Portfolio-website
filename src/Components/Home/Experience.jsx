@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Chrono } from "react-chrono";
 import rcctechz from '../../assets/Images/rcctechz.png'
 import gdsc from '../../assets/Images/gdsc.png'
@@ -6,6 +6,8 @@ import RightBox from '../../Styles/CareerSection/RightBox';
 import noobcode from '../../assets/Images/noobcode.png'
 import '../../App.css'
 import LeftBox from '../../Styles/CareerSection/LeftBox';
+import { motion } from 'framer-motion';
+import { useInView } from "react-intersection-observer";
 
 const Experience = () => {
 
@@ -51,12 +53,26 @@ const Experience = () => {
         }
     ]
 
+    const [startAnimation, setStartAnimation] = useState(false);
+
+    const { ref, inView } = useInView({
+        threshold: 0.3,
+    });
+
+    useEffect(() => {
+        if (inView) {
+            setStartAnimation(true);
+        } else {
+            setStartAnimation(false);
+        }
+    }, [inView]);
+
     return (
         <div className=' flex flex-col items-center md:px-32 lg:px-40 border-transparent z-10 relative lg:mb-20 lg:mt-8' id='experience'>
             <h1 className=' text-white text-4xl lg:text-5xl md:text-4xl font-medium mt-14 lg:mt-2 lg:py-5 flex flex-row justify-center'>
                 <p className='mx-auto pb-6'>My Experiences ... </p>
             </h1>
-            <div className=' w-full z-10 relative'>
+            <div className=' w-full z-10 relative' ref={ref}>
                 <Chrono mode="VERTICAL_ALTERNATING" borderLessCards={true} allowDynamicUpdate = {true}
                     theme={{
                         primary: '#AE00FF',
@@ -68,9 +84,13 @@ const Experience = () => {
                     {
                         experiences.map((experience, index) => {
                             return (
-                                <div key={index} className=' z-10 w-full h-full flex flex-row justify-evenly flex-wrap rounded-xl bg-experience py-4 px-3 md:px-1'>
+                                <motion.div key={index} className=' z-10 w-full h-full flex flex-row justify-evenly flex-wrap rounded-xl bg-experience py-4 px-3 md:px-1'
+                                    initial={{ opacity: 0, x: `${(index + 1) % 2 === 0 ? "+20%" : "-20%"}` }}
+                                    animate={startAnimation && { opacity: 1, x: 0 }}
+                                    transition={{ duration: 1.0, ease: "easeOut" }}
+                                >
                                     <a href={experience.url} target='_blank' className=' h-16 '>
-                                        <img src={experience.media.source.url} alt="" className=' rounded-full h-full w-full pb-4 lg:py-0' />
+                                        <img src={experience.media.source.url} alt="" className=' rounded-full h-full w-full pb-4 lg:py-0 hover:scale-75' />
                                     </a>
                                     <div className=' max-w-[21rem] space-y-4'>
                                         <h1 className=' text-white text-lg font-medium'>{experience.cardTitle}</h1>
@@ -78,7 +98,7 @@ const Experience = () => {
                                         <h1 className=' text-white text-sm font-medium'>{experience.title}</h1>
                                         <h1 className=' text-white text-sm font-medium'>{experience.cardDetailedText}</h1>
                                     </div>
-                                </div>
+                                </motion.div>
                             )
                         })
                     }
