@@ -5,6 +5,7 @@ import { toast } from 'react-hot-toast'
 import { BsCheckCircleFill } from 'react-icons/bs'
 import { IoMdCloseCircle } from 'react-icons/io'
 import emailjs from '@emailjs/browser';
+import UpperBox from '../../Styles/ContactSection/UpperBox'
 
 const Contact = () => {
 
@@ -154,6 +155,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            <UpperBox />
         </div>
     )
 }

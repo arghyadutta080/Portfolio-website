@@ -19,10 +19,10 @@ const HeroSection = () => {
                             Hello Everyone!!
                         </h2>
                         <LandingPage />
-                        <p className="mt-8 text-lg leading-8 text-white font-semibold">
+                        <p className="mt-8 px-2 text-lg leading-8 text-white font-semibold">
                             This is my Portfolio website.
                         </p>
-                        <p className=" text-lg leading-8 text-white font-semibold">
+                        <p className=" text-lg px-2 leading-8 text-white font-semibold">
                             Let us take a walk through to know more about me.
                         </p>
                         <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">

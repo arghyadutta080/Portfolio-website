@@ -5,6 +5,7 @@ import gdsc from '../../assets/Images/gdsc.png'
 import RightBox from '../../Styles/CareerSection/RightBox';
 import noobcode from '../../assets/Images/noobcode.png'
 import '../../App.css'
+import LeftBox from '../../Styles/CareerSection/LeftBox';
 
 const Experience = () => {
 
@@ -84,6 +85,7 @@ const Experience = () => {
                 </Chrono>
             </div>
             <RightBox />
+            <LeftBox />
         </div>
 
     )
