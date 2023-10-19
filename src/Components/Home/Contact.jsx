@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import { BsFillSendFill, BsGithub, BsLinkedin, BsTwitter, BsFacebook, BsInstagram } from 'react-icons/bs'
 import { RiMailSendFill } from 'react-icons/ri'
+import { toast } from 'react-hot-toast'
+import { BsCheckCircleFill } from 'react-icons/bs'
+import { IoMdCloseCircle } from 'react-icons/io'
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
@@ -25,13 +29,34 @@ const Contact = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(contactDetails);
-        try {
-            emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, templateParams, import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
-            
-        } catch (error) {
+
+        if (contactDetails.name === "" || contactDetails.email === "" || contactDetails.message === "") {
+            toast.custom((t) => (
+                <div className={`${t.visible ? 'animate-enter' : 'animate-leave'} max-w-[17rem] w-full bg-[#EAF6FF] shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}>
+                    <div className="flex-1 w-0 py-4 px-1">
+                        <div className="flex flex-row justify-evenly items-center">
+                            <IoMdCloseCircle className='' size={27} color='#FF0000' />
+                            <p className=' font-medium text-[#020422] ' >Sorry, Message didn't send</p>
+                        </div>
+                    </div>
+                </div>
+            ))
             console.log(error)
+        } else {
+            emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, templateParams, import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+            toast.custom((t) => (
+                <div className={`${t.visible ? 'animate-enter' : 'animate-leave'} max-w-[17rem] w-full bg-[#EAF6FF] shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}>
+                    <div className="flex-1 w-0 py-4 px-1">
+                        <div className="flex flex-row justify-evenly items-center">
+                            <BsCheckCircleFill size={27} color='#38D502' />
+                            <p className=' font-medium text-[#020422] '>Message sent successfully!</p>
+                        </div>
+                    </div>
+                </div>
+            ))
         }
     }
+
 
     return (
         <div className=" z-10 relative px-4 border-t border-transparent md:mt-7 lg:mt-16 lg:pb-14 md:pb-10 pb-5 md:px-48" id='contact'>
@@ -42,7 +67,7 @@ const Contact = () => {
                 </h1>
                 <div className="z-10 relative overflow-hidden sm:rounded-0 sm:px-0 md:pt-4 flex flex-col lg:flex-row lg:justify-between items-center lg:pt-0 ">
                     <form onSubmit={handleSubmit}
-                    className="mx-7 md:mx-auto lg:mx-0 mt-7 lg:mt-9 max-w-lg text-center lg:flex-auto lg:py-5 lg:text-left bg-[#1f2267] px-8 rounded-xl">
+                        className="mx-7 md:mx-auto lg:mx-0 mt-7 lg:mt-9 max-w-lg text-center lg:flex-auto lg:py-5 lg:text-left bg-[#1f2267] px-8 rounded-xl">
                         <div className="my-4 lg:mt-3 grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-6">
                             <div className="sm:col-span-3">
                                 <label htmlFor="first-name" className="block text-lg font-medium leading-6 text-white">
@@ -90,7 +115,7 @@ const Contact = () => {
                                         onChange={handleChange}
                                         rows={3}
                                         className="block w-full rounded-lg border border-gray-600 p-1.5 text-white shadow-sm sm:text-sm sm:leading-6 bg-[#313491]"
-                                        
+
                                     />
                                 </div>
                             </div>
@@ -129,7 +154,6 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }
