@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { Chrono } from "react-chrono";
+import RightBox from '../../Styles/CareerSection/RightBox';
+import LeftBox from '../../Styles/CareerSection/LeftBox';
 import rcctechz from '../../assets/Images/rcctechz.png'
 import gdsc from '../../assets/Images/gdsc.png'
-import RightBox from '../../Styles/CareerSection/RightBox';
 import noobcode from '../../assets/Images/noobcode.png'
-import '../../App.css'
-import LeftBox from '../../Styles/CareerSection/LeftBox';
+import { Chrono } from "react-chrono";
 import { motion } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
+import '../../App.css'
 
 const Experience = () => {
 

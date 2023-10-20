@@ -32,7 +32,7 @@ const Project = () => {
                     Projects.map((project, index) => {
                         return (
                             <motion.div key={index} className=' w-[80%] lg:w-[48%] h-60 text-white bg-project flex flex-col justify-between rounded-xl my-3 md:my-5 p-5 '
-                            initial={{ opacity: 0, x: `${(index + 1) % 2 === 0 ? "+20%" : "-20%"}` }}
+                            initial={{ opacity: 0, x: `${(index + 1) % 2 === 0 ? "+10%" : "-20%"}` }}
                             animate={startAnimation && { opacity: 1, x: 0 }}
                             transition={{ duration: 1.0, ease: "easeOut" }}
                             >

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
+import UpperBox from '../../Styles/ContactSection/UpperBox'
 import { BsFillSendFill, BsGithub, BsLinkedin, BsTwitter, BsFacebook, BsInstagram } from 'react-icons/bs'
-import { RiMailSendFill } from 'react-icons/ri'
-import { toast } from 'react-hot-toast'
 import { BsCheckCircleFill } from 'react-icons/bs'
 import { IoMdCloseCircle } from 'react-icons/io'
+import { RiMailSendFill } from 'react-icons/ri'
+import { toast } from 'react-hot-toast'
 import emailjs from '@emailjs/browser';
-import UpperBox from '../../Styles/ContactSection/UpperBox'
 import { motion } from 'framer-motion'
 import { useInView } from "react-intersection-observer";
 
@@ -85,7 +85,7 @@ const Contact = () => {
                 <motion.div className="z-10 relative overflow-hidden sm:rounded-0 sm:px-0 md:pt-4 flex flex-col lg:flex-row lg:justify-between items-center lg:pt-0 " ref={ref}
                     initial={{ opacity: 0, y: "+20%" }}
                     animate={startAnimation && { opacity: 1, y: 0 }}
-                    transition={{ duration: 0.9, ease: "easeOut" }}>
+                    transition={{ duration: 0.8, ease: "easeOut" }}>
                     <form onSubmit={handleSubmit}
                         className="mx-7 md:mx-auto lg:mx-0 mt-7 lg:mt-9 max-w-lg text-center lg:flex-auto lg:py-5 lg:text-left bg-[#1f2267] px-8 rounded-xl">
                         <div className="my-4 lg:mt-3 grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-6">
