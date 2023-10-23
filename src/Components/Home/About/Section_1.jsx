@@ -49,7 +49,7 @@ const Section_1 = () => {
                         RCC Institute of Information Technology, Kolkata
                     </p>
                     <p className="mt-2 lg:mt-1 text-lg lg:text-xl leading-8 text-white font-medium lg:font-semibold text-center">
-                        Batchelor in Technology in Computer Science and Engineering
+                        Bachelor in Technology in Computer Science and Engineering
                     </p>
                     <p className="mt-2 lg:mt-1 text-lg lg:text-xl leading-8 text-white font-medium lg:font-semibold text-center">
                         October 2021 - Present
