@@ -50,7 +50,7 @@ const Project = () => {
                                 <div className=' text-sm md:text-lg font-medium'>
                                     {project.description}
                                 </div>
-                                <div className=' flex flex-row justify-start space-x-5 lg:space-x-8 lg:w-[70%]'>
+                                <div className=' flex flex-row justify-start space-x-2 lg:space-x-8'>
                                     {
                                         project.tags.map((tech, index) => {
                                             return (

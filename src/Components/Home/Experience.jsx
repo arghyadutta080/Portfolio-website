@@ -26,7 +26,7 @@ const Experience = () => {
             }
         },
         {
-            title: "February 2023 - Present",
+            title: "February 2023 - July 2023",
             cardTitle: "NoobCode Community",
             url: "https://noobcode-website.vercel.app/",
             cardSubtitle: "Community Strategy advisor",

@@ -1,5 +1,13 @@
 export const Projects = [
     {
+        title: "Saarthi Chatbot",
+        description: "An intelligent chatbot web application, built to assist users, powered by the OpenAI API.",
+        image: "https://user-images.githubusercontent.com/74038190/129473960-2d3c0d5e-1b9e-4e1b-8c5d-9a9a8d7a9c9e.png",
+        tags: ["typescript", "react", "vite", "mongodb", "nodejs", "express", "postman"],
+        source: "https://github.com/arghyadutta080/Saarthi-Chatbot.git",
+        visit: "",
+    },
+    {
         title: "Blogger's World",
         description: "A blogging Web-app, bootstrapped with blog publishing, reading and commenting on blog feature ",
         image: "https://user-images.githubusercontent.com/74038190/129473960-2d3c0d5e-1b9e-4e1b-8c5d-9a9a8d7a9c9e.png",
