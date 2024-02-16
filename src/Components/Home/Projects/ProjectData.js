@@ -3,7 +3,7 @@ export const Projects = [
         title: "Saarthi Chatbot",
         description: "An intelligent chatbot web application, built to assist users, powered by the OpenAI API.",
         image: "https://user-images.githubusercontent.com/74038190/129473960-2d3c0d5e-1b9e-4e1b-8c5d-9a9a8d7a9c9e.png",
-        tags: ["typescript", "react", "vite", "mongodb", "nodejs", "express", "postman"],
+        tags: ["typescript", "react", "vite", "mongodb", "nodejs", "express"],
         source: "https://github.com/arghyadutta080/Saarthi-Chatbot.git",
         visit: "",
     },
@@ -14,6 +14,14 @@ export const Projects = [
         tags: ["typescript", "react", "vite", "tailwind", "firebase",],
         source: "https://github.com/arghyadutta080/Blogger-s-Site.git",
         visit: "https://bloggers-world.netlify.app",
+    },
+    {
+        title: "Realtime Editable Doc",
+        description: "A mini clone of Google Docs with real-time documentation updating and storing the data in the database.",
+        image: "https://user-images.githubusercontent.com/74038190/129473960-2d3c0d5e-1b9e-4e1b-8c5d-9a9a8d7a9c9e.png",
+        tags: ["typescript", "react", "vite", "mongodb", "nodejs", "express"],
+        source: "https://github.com/arghyadutta080/Realtime-Editable-Doc.git",
+        visit: "",
     },
     {
         title: "StockXplore",
