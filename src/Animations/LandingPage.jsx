@@ -7,7 +7,9 @@ const LandingPage = () => {
           sequence={[
               'I am Arghya Dutta',
               1000, 
-              'I am a Full Stack Developer',
+              'I am a Frontend Developer',
+              1000, 
+              'I am a Backend Developer',
               1000
           ]}
           wrapper="span"

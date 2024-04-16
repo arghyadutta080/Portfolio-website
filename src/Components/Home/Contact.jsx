@@ -8,6 +8,7 @@ import { toast } from 'react-hot-toast'
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion'
 import { useInView } from "react-intersection-observer";
+import { customToast } from './CustomToast'
 
 const Contact = () => {
 
@@ -29,34 +30,25 @@ const Contact = () => {
         user_email: contactDetails.email,
     }
 
-    const handleSubmit = (event) => {
+    const sendEmail = async () => {
+        await emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, templateParams, import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+    }
+
+
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        console.log(contactDetails);
+        // console.log(contactDetails);
 
         if (contactDetails.name === "" || contactDetails.email === "" || contactDetails.message === "") {
-            toast.custom((t) => (
-                <div className={`${t.visible ? 'animate-enter' : 'animate-leave'} max-w-[17rem] w-full bg-[#EAF6FF] shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}>
-                    <div className="flex-1 w-0 py-4 px-1">
-                        <div className="flex flex-row justify-evenly items-center">
-                            <IoMdCloseCircle className='' size={27} color='#FF0000' />
-                            <p className=' font-medium text-[#020422] ' >Sorry, your message is not sent</p>
-                        </div>
-                    </div>
-                </div>
-            ))
-            console.log(error)
+            customToast(false);
+            // console.log(error)
         } else {
-            emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, templateParams, import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
-            toast.custom((t) => (
-                <div className={`${t.visible ? 'animate-enter' : 'animate-leave'} max-w-[17rem] w-full bg-[#EAF6FF] shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}>
-                    <div className="flex-1 w-0 py-4 px-1">
-                        <div className="flex flex-row justify-evenly items-center">
-                            <BsCheckCircleFill size={27} color='#38D502' />
-                            <p className=' font-medium text-[#020422] '>Message sent successfully!</p>
-                        </div>
-                    </div>
-                </div>
-            ))
+            try {  
+                await sendEmail();
+                customToast(true);
+            } catch (error) {
+                customToast(false);
+            }
         }
     }
 
