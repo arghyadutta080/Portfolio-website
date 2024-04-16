@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import UpperBox from '../../Styles/ContactSection/UpperBox'
 import { BsFillSendFill, BsGithub, BsLinkedin, BsTwitter, BsFacebook, BsInstagram } from 'react-icons/bs'
-import { BsCheckCircleFill } from 'react-icons/bs'
-import { IoMdCloseCircle } from 'react-icons/io'
 import { RiMailSendFill } from 'react-icons/ri'
-import { toast } from 'react-hot-toast'
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion'
 import { useInView } from "react-intersection-observer";
