@@ -5,7 +5,7 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 
 const TechStacks = () => {
 
-    const techStacks = ["vscode", "c", "cpp", "python", "html", "css", "javascript", "typescript", "react", "nextjs", "redux", "bootstrap", "tailwind", "nodejs", "express", "django", "mongodb", "mysql", "firebase", "replit", "git", "github", "netlify", "vercel", "postman"]
+    const techStacks = ["vscode", "c", "cpp", "python", "html", "css", "javascript", "typescript", "react", "nextjs", "redux", "bootstrap", "tailwind", "nodejs", "express", "django", "fastapi", "mongodb", "mysql", "sqlite", "firebase", "replit", "git", "github", "netlify", "vercel", "postman"]
 
     return (
         <div className=" px-5 lg:px-56 md:px-48 pb-10 pt-12 lg:pt-7 flex flex-col z-10 relative ">

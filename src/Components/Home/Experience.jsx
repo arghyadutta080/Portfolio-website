@@ -4,6 +4,8 @@ import LeftBox from '../../Styles/CareerSection/LeftBox';
 import rcctechz from '../../assets/Images/rcctechz.png'
 import gdsc from '../../assets/Images/gdsc.png'
 import noobcode from '../../assets/Images/noobcode.png'
+import ekko from '../../assets/Images/ekko.jpg'
+import fibo from '../../assets/Images/fibo.jpg'
 import { Chrono } from "react-chrono";
 import { motion } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
@@ -12,6 +14,32 @@ import '../../App.css'
 const Experience = () => {
 
     const experiences = [
+        {
+            title: "May 2024 - July 2024",
+            cardTitle: "FIBO",
+            url: "https://www.linkedin.com/company/ekko-network",
+            cardSubtitle: "SDE Intern",
+            cardDetailedText: "Handle the development and deployment of frontend of the product and focused on responsive UI development, integrating PWA functionality and state management.",
+            media: {
+                type: "IMAGE",
+                source: {
+                    url: fibo,
+                }
+            }
+        },
+        {
+            title: "April 2024 - May 2024",
+            cardTitle: "Ekko Network",
+            url: "https://www.linkedin.com/company/ekko-network",
+            cardSubtitle: "SDE Intern (Full-Stack)",
+            cardDetailedText: "Handle the development of frontend & backend of product. Participate in code review, and research new tools and technologies to enhance development process.",
+            media: {
+                type: "IMAGE",
+                source: {
+                    url: ekko,
+                }
+            }
+        },
         {
             title: "July 2023 - Present",
             cardTitle: "Google Developer Student Clubs (GDSC) - RCCIIT",

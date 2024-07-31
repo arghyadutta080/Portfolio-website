@@ -31,7 +31,7 @@ const Section_2 = () => {
                         <p>INTERESTS</p><FaLaptopCode className='text-white inline-block pl-3' size={55} />
                     </h2>
                     <p className="mt-3 text-base leading-8 text-white font-medium">
-                        With a strong passion for technology and a keen interest in software development, I've been working as a web and app developer since last year, building engaging and interactive websites, web-apps and mobile apps. I specialise in MERN and Django and have used these frameworks to create various applications.
+                        With a strong passion for technology and a keen interest in software development, I've been working as a web and app developer for last 2 years, building engaging and interactive websites, web-apps and mobile apps. I specialise in MERN, Next.js, FastAPI and Firebase-like technologies and have used these to create various applications.
                     </p>
                     <p className=" mt-4 text-base leading-8 text-white font-semibold">
                         I'm excited to continue exploring new technologies and developing my skills as a software developer, and I'm always looking for new challenges and opportunities to learn and grow in this field.
