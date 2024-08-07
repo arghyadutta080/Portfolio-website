@@ -41,11 +41,11 @@ const Experience = () => {
             }
         },
         {
-            title: "July 2023 - Present",
+            title: "July 2023 - August 2024",
             cardTitle: "Google Developer Student Clubs (GDSC) - RCCIIT",
             url: "https://gdsc.community.dev/rcc-institute-of-information-technology-kolkata/",
-            cardSubtitle: "GDCS Lead",
-            cardDetailedText: "Currently I am leading the GDSC - RCCIIT Chapter. I am responsible for the overall functioning of the club and also for the planning and execution of various events and workshops. ",
+            cardSubtitle: "GDSC Lead",
+            cardDetailedText: "I am led the GDSC - RCCIIT Chapter. I was responsible for the overall functioning of the club and also for the planning and execution of various events and workshops. ",
             media: {
                 type: "IMAGE",
                 source: {
@@ -58,7 +58,7 @@ const Experience = () => {
             cardTitle: "NoobCode Community",
             url: "https://noobcode-website.vercel.app/",
             cardSubtitle: "Community Strategy advisor",
-            cardDetailedText: "I am seving the Community as a Strategy advisor. I am responsible for thinking about different strategic actions during the planning and execution of various events for community growth.",
+            cardDetailedText: "I served the Community as a Strategy advisor. I was responsible for thinking about different strategic actions during the planning and execution of various events for community growth.",
             media: {
                 type: "IMAGE",
                 source: {
